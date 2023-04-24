@@ -5,7 +5,7 @@ We can run github runners locally. In this lab, we will register gitlab-runner o
 
 **NOTE:** Make sure to open new terminal and connect with your remote VM before running docker commands below:
 
-`ssh root@YOUR_VM_DNS_NAME.courseware.io`
+`ssh ubuntu@YOUR_VM_DNS_NAME.courseware.io`
 
 **Password:** Will be provided by Instructor.
 

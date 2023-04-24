@@ -52,7 +52,7 @@ GitLab recommendation is to create SSH key type ED25519, which is more secure th
 
 **NOTE:** Make sure to open new terminal and connect with your remote VM as shown below before creating SSH keys:
 
-`ssh root@YOUR_VM_DNS_NAME.courseware.io`
+`ssh ubuntu@YOUR_VM_DNS_NAME.courseware.io`
 
 ![Create SSH key ed25519](./images/19.png)
 
