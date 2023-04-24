@@ -11,7 +11,7 @@ In this scenario we'll explore the different ways you can find which commit intr
 There is no requirement for any setup.
 
 Run the following command in **terminal**:
-`cd ~/Desktop/gitlab-intro/5/`
+`cd ~/Desktop/gitlab-intro/lab9/ && mv git .git`
 
 
 ## Git Diff Two Commits

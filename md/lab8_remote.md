@@ -15,7 +15,7 @@ Let's get started.
 There is no requirement for any setup.
 
 Run the following command in **terminal**:
-`cd ~/Desktop/gitlab-intro/8/`
+`cd ~/Desktop/gitlab-intro/lab8/ && mv git .git`
 
 
 

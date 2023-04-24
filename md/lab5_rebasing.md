@@ -15,7 +15,7 @@ You should only rebase commits that have not been shared with other people via p
 There is no requirement for any setup.
 
 Run the following command in **terminal**:
-`cd ~/Desktop/gitlab-intro/6/`
+`cd ~/Desktop/gitlab-intro/lab5/ && mv git .git`
 
 
 ## Step 1 - Amending Commit Messages
