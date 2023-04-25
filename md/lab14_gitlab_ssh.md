@@ -35,6 +35,12 @@ The template cretaed README.md file, initial
 directory with `index.html` and
 `style.css` files.
 
+
+**Important!** 
+
+1) shared runners for the project that you created. Otherwise, gitlab will fail your pipeline and ask for account verification.
+2) Make sure that default branch name is `main` for the newly created project. Otherwise, use correct default branch name in `.gitlab-ci.yml` .
+
 # Create and add SSH keys
 
 We already have an example project, now we need to create SSH keys. They
@@ -97,8 +103,7 @@ private key in value field. Click `Add Variable`.
 
 Add two more variables:
 
--   `SSH_USER` --- name of the
-    user on the remote server
+-   `SSH_USER` --- name of the user on the remote server: **ubuntu**
 -   `VM_IPADDRESS` --- IP address of remote server i-e: **YOUR_VM_DNS_NAME.courseware.io**
 
 ![Added variables](./images/added_variables.png)
@@ -181,6 +186,9 @@ pages:
   only:
   - main
 ```
+
+**Note:** Make sure that default branch name is `main` for the newly created project. Otherwise, use correct default branch name in `.gitlab-ci.yml` .
+
 
 `.gitlab-ci.yml` defines
 pipeline. It uses docker image `alpine:latest` to run jobs defined in pipeline. We only have one

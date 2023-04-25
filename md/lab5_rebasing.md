@@ -19,9 +19,9 @@ Run the following command in **terminal**:
 
 
 ## Step 1 - Amending Commit Messages
-Re-writing the repositories history is done using git **rebase** -interactive. By putting rebase into interactive mode you have more control over the changes you want to make. After launching into interactive mode you are given six commands to perform on each commit in the repository. By using the editor which opens, by default Vim, you define which actions you want to perform on each commit.
+Re-writing the repositories history is done using git **rebase** -interactive. By putting rebase into interactive mode you have more control over the changes you want to make. After launching into interactive mode you are given six commands to perform on each commit in the repository. By using the editor which opens, you define which actions you want to perform on each commit.
 
-In this lab, we want to change the commit. To put it into this state we need to change the word "pick" next to the commit to match the action you want to perform based on the list shown in the Vim window, in this case "reword".
+In this lab, we want to change the commit. To put it into this state we need to change the word "pick" next to the commit to match the action you want to perform based on the list shown in the editor window, in this case "reword".
 
 In this lab, we want to change the commit message.
 
@@ -30,21 +30,19 @@ To begin we need to enter Interactive Rebase mode using `git rebase --interactiv
 
 **Select Interactive Mode**
 
-To begin with Vim can be a little confusing, to edit text you need to first type `i` which will put you into "insert mode".
-
 We want to edit the "comit" typo in the first commit message "Initial comit of the list". For the commit change the word "pick" to match the command we want to perform on the commit, in this case "reword".
 
-To save and exit press `esc` key then `:wq`. This will open another Vim editor window.
+Now, save and exit from the editor. This will open another editor window.
 
 **Changing Message**
 
-Again using Vim, edit the commit message to change "comit" to "commit". After saving and exiting Vim you will see the output of Git changing the commit. Use `git log --oneline` to see the updated commit message.
+Again using editor, edit the commit message to change "comit" to "commit". After saving and exiting, you will see the output of Git changing the commit. Use `git log --oneline` to see the updated commit message.
 
 **Protip**
 
 The --root argument allows you to rebase all commits in the repository, including the first commit.
 
-A faster alternative to change the last commit message is using `git commit --amend` and make the change using Vim.
+A faster alternative to change the last commit message is using `git commit --amend` and make the change using editor.
 
 ## Step 2 - Squash Commits
 A series of 8 different commits has been made in your local environment. At the time these commits made sense however now they need to be just a single commit. Using Rebase we need to squash the commits together.
@@ -62,7 +60,7 @@ In the previous stage we used reword. Here we want to use squash. We want to squ
 To squash the commits we need to leave the first commit as our base, and label the following 7 with squash.
 
 #### Commit Message
-As saving and quitting Vim we are shown a new Vim window which lists a combination of the 8 commit messages in the rebase.
+As saving and quitting, we are shown a new editor window which lists a combination of the 8 commit messages in the rebase.
 
 After saving the commit message the history will be modfied. You can see this using `git log --oneline`
 
@@ -75,7 +73,7 @@ We want to re-order our last two commits. Using HEAD~2 allows us to modify them.
 
 `git rebase --interactive HEAD~2`
 
-Using Vim, simply reorder the lines, save & quit, and the commits will match the order.
+Using editor, simply reorder the lines, save & quit, and the commits will match the order.
 
 ## Step 4 - Split Commit
 Just like with squashing commits, sometimes it's useful to split changes out of commits in order to keep them focused and make cherry picking or reverting easier.

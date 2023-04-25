@@ -52,7 +52,9 @@ docker run -d --name gitlab-runner --restart always \
 docker run --rm -it -v gitlab-runner-config:/etc/gitlab-runner gitlab/gitlab-runner:latest register
 ```
 
-2. Enter your GitLab instance URL (also known as the gitlab-ci coordinator URL).
+2. Enter your GitLab instance URL (also known as the gitlab-ci coordinator URL):
+    `https://gitlab.com/`
+
 3. Enter the token you obtained to register the runner.
 4. Enter a description for the runner. You can change this value later in the GitLab user interface.
 5. Enter the tags associated with the runner, separated by commas. You can change this value later in the GitLab user interface.
